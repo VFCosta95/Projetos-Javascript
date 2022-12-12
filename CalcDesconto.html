@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto</title>
+    <style>
+        body{
+            background-color: burlywood;
+            color: rgb(5, 0, 98);
+            font-size: 20px;
+            font-family: serif;
+            text-align: center;
+        }
+
+        input{
+            border: 1px;
+            color: blue;
+            background-color: rgb(122, 129, 127);
+            font-family: fantasy;
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Calculando Descontos de 5%, 10%, 15% e 20%</h1>
+    
+    <input type="button" onclick="javascript:five();" value="Desconto 5%">
+    <input type="button" onclick="javascript:ten();" value="Desconto 10%">
+    <input type="button" onclick="javascript:tfive();" value="Desconto 15%">
+    <input type="button" onclick="javascript:vinte();" value="Desconto 20%">
+
+
+    <script>
+        
+        var preco = Number(prompt('Qual o preço do produto ?'))
+        
+        function five(){
+            re1 = Number(preco - (5 / 100) * preco)
+
+            document.write('Com desconto de 5% o preço fica ' + re1.toFixed(2))
+        }
+
+        function ten(){
+           re2 = Number(preco - (10 / 100) * preco)
+
+            document.write('Com desconto de 10% o preço fica ' + re2.toFixed(2))
+        }
+
+        function tfive(){
+            re3 = Number(preco - (15 / 100) * preco)
+
+            document.write('Com desconto de 15% o preço fica ' + re3.toFixed(2))
+        }
+
+        function vinte(){
+            re4 = Number(preco - (20 / 100) * preco)
+
+            document.write('Com desconto de 20% o preço fica ' + re4.toFixed(2))
+        }
+
+
+
+    </script>
+</body>
+</html>

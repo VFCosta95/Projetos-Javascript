@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <h1>Conversor de Moedas</h1>
+
+    <input type="button" value="Converter" onclick="javascript:moedas();">
+
+    <script>
+
+        function moedas(){
+           
+            var n1 = Number(prompt('Quanto dinheiro você tem ? '))
+            var dolar = Number(5.38)
+            var r1 = n1 / dolar
+
+            document.write(`Com ${n1} reais você pode comprar ${r1.toFixed(2)} dólares <br> <br>`.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}))
+
+            var euro = Number(5.55)
+            var r2 = n1 / euro
+            document.write(`Com ${n1} reais você pode comprar ${r2.toFixed(2)} euros`.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}))
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

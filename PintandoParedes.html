@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintando Paredes</title>
+    <style>
+        body{
+            background-color: cadetblue;
+            color: darkblue;
+            font-size: 25px;
+            font-family: unner;
+            text-align: center;
+        }
+
+        #pg2{
+            background: darkcyan;
+            font-size: 20px;
+            color: darkred;
+            font-family: cursive;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pintando Paredes</h1>
+    
+    <script>
+
+            let larguraParede = Number(prompt('Qual a largura da parede ?'))
+            let AlturaParede = Number(prompt('Qual a altura da parede ?'))
+            
+        
+            let dimensão = larguraParede * AlturaParede
+
+            let tinta = 2
+
+            let res = Number(dimensão / tinta)
+
+            document.write(`Sua parede tem a dimensão de ${larguraParede} x ${AlturaParede} é sua área e de ${dimensão}m², portanto para pintar a parede você precisará de ${res}L de tintas`)
+            
+    </script>
+    
+</body>
+</html>

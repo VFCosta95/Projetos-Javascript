@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Distancia em Metros</h1>
+
+    <input type="button" value="executar" onclick="javascript:metros();">
+
+    <script>
+        
+        function metros(){
+            var distanciaMetro = Number(prompt('Digite uma distancia em metros: '))
+            var dam = 10
+            var hm = 100
+            var km = 1000
+
+            var res1 = distanciaMetro / km
+            document.write(res1 +  'km <br> <br>')
+
+            var res2 = distanciaMetro / hm
+            document.write(res2 + 'hm <br> <br>')
+
+            var res3 = distanciaMetro / dam
+            document.write(res3 + 'dam <br> <br>')
+
+            document.write(distanciaMetro + 'm <br> <br>')
+
+            var res4 = distanciaMetro * dam
+            document.write(res4 + 'dam <br> <br>')
+
+            var res5 = distanciaMetro * hm
+            document.write(res5 + 'cm <br> <br>')
+
+            var res6 = distanciaMetro * km
+            document.write(res6 + 'mm <br> <br>')
+        }
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Calculadora</title>
+    <style>
+        body{
+            background-color:darkgrey;
+        }
+        .tit{
+            background-color: rgb(92, 127, 129);
+            color:darkred;
+            height: 120px;
+            width: 2000;
+            font-size: 50px;
+            font-family: cursive;
+            text-align: center;
+        }
+        .tit:hover{
+            color: darkblue;
+        }
+
+        div{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            height: 120px;
+            width: 2000;
+            background-color:rgb(136, 139, 130);
+            color: darkred;
+            padding-top: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        div:hover{
+            color: rgb(255, 187, 0);
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <h1 class="tit">Projeto Calculadora Básica</h1>
+    <br><br><br>
+    <div>
+        <h2>Adição</h2>
+        <input type="number" id="n1">
+        <input type="button" value="+">
+        <input type="number" id="n2">
+        <input type="button" onclick="javascript:soma();" value="=">
+        <input type="text" id="resultado1" value="">
+    </div>
+    <br><br>
+    <div>
+        <h2>Subtração</h2>
+        <input type="number" id="n3">
+        <input type="button" value="-">
+        <input type="number" id="n4">
+        <input type="button" onclick="javascript:menos();" value="=">
+        <input type="text" id="res2" value="">
+    </div>
+    <br><br>
+    <div>
+        <h2>Multiplicação</h2>
+        <input type="number" id="n5">
+        <input type="button" value="x">
+        <input type="number" id="n6">
+        <input type="button" onclick="javascript:vezes();" value="=" >
+        <input type="text" id="res3" value="">
+    </div>
+    <br><br>
+    <div>
+        <h2>Divisão</h2>
+        <input type="number" id="n7">
+        <input type="button" value="/">
+        <input type="number" id="n8">
+        <input type="button" onclick="javascript:divis();" value="=">
+        <input type="text" id="res4" value="">
+    </div>
+
+
+    <script>
+
+        function soma(){
+            var n1 = Number(document.getElementById('n1').value)
+            var n2 = Number(document.getElementById('n2').value)
+        
+            resultado1.value = (n1 + n2)
+        }
+        
+        function menos(){
+            var n3 = Number(document.getElementById('n3').value)
+            var n4 = Number(document.getElementById('n4').value)
+
+            res2.value = (n3 - n4)
+        }
+
+        function vezes(){
+            var n5 = Number(document.getElementById('n5').value)
+            var n6 = Number(document.getElementById('n6').value)
+
+            res3.value = (n5 * n6)
+        }
+
+        function divis(){
+            var n7 = Number(document.getElementById('n7').value)
+            var n8 = Number(document.getElementById('n8').value)
+
+            res4.value = (n7 / n8)
+        }
+
+    </script>
+</body>
+</html>

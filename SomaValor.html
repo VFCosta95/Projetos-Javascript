@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+    <style>
+        body{
+            background-color: darkcyan;
+            color: aliceblue;
+        }
+        input{
+            background-color:blanchedalmond;
+            color: darkred;
+            font-size: 17px;
+            font-family: fantasy;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+
+    <input type="number" value="" id="n1">
+    <input type="button" value="+" >
+    <input type="number" value="" id="n2">
+    <input type="button" value="=" onclick="javascript:soma();">
+    <input type="text" name="" id="valor" value="">
+
+
+    <script>
+
+        function soma(){
+        var n1 = Number(document.getElementById('n1').value)
+        var n2 = Number(document.getElementById('n2').value)
+
+        valor.value = (n1 + n2)
+        }
+
+
+    </script>
+
+    <!--    CDN _ Local     -->
+    <script src="//code.jquery.com/jquery-2.2.0.js">
+        
+    </script>
+    
+</body>
+</html>

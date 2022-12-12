@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antecessor e Sucessor </title>
+    <style>
+        body{
+            background-color: darkgoldenrod;
+            color: darkblue;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        input{
+            background-color: rgb(200, 255, 200);
+            color: rgb(24, 24, 24);
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <h1>Antecessor e Sucessor de um N°</h1>
+    
+    <input type="button" value="Executar" onclick="javascript:exe();">
+    <br><br>
+
+    <h2>Antecessor</h2>
+    <input type="text" value="" id="res1" >
+    <br><br>
+
+    <h2>Sucessor</h2>
+    <input type="text" value="" id="res2">
+
+
+    <script>
+
+    var n1 = Number(prompt('Digite um N°: '))
+    var n2 = 1
+
+    function exe(){
+       
+        res1.value = (n1 + n2)
+        res2.value = (n1 - n2)
+    }
+
+
+    </script>
+
+</body>
+</html>

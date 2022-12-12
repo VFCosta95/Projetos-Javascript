@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobro, Triplo, Raiz Quadrada</title>
+    <style>
+        body{
+            background-color: coral;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        input{
+            font-size: 20px;
+            background-color: darkblue;
+            color: aliceblue;
+            font-family: serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Dobro, Triplo, Raiz Quadrada</h1>
+    <br>
+    
+    <input type="button" value="Executar" onclick="javascript:execucao1();">
+
+    <h3>Dobro</h3>
+    <input type="text" value="" id="r1">
+
+    <h3>Triplo</h3>
+    <input type="text" value="" id="r2">
+
+    <h3>Raiz Quadrada</h3>
+    <input type="text" value="" id="r3">
+
+
+    <script>
+
+        var n1 = Number(prompt('Digite um N° : '))
+        
+        function execucao1(){
+
+        r1.value = (n1 * 2)
+        r2.value = (n1 * 3)
+        r3.value = (n1** (1/2))
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>

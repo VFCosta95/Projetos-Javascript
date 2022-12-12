@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Aritmetica</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        h1{
+            color: darkblue;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        input{
+            color: rgb(0, 0, 0);
+            background-color: crimson;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Média Aritmética</h1>
+    <br>
+    <input type="button" name="" value="Executar" onclick="javascript:notas();">
+
+
+    <script>
+
+
+        function notas(){
+        var nota1 = Number(prompt('Digite a primeira nota: '))
+        var nota2 = Number(prompt('Digite a segunda nota: '))
+        var resultado = (nota1 + nota2) / 2
+        document.write(`A média final é ${resultado}!`)
+    }
+
+
+    </script>
+
+</body>
+</html>

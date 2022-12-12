@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso em Video - JS Completo</title>
+    <style>
+        body{
+            background-color: rgb(247, 250, 253);
+            
+        }
+
+
+        h1{
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: darkblue;
+            width: 1500px;
+            height: 100px;
+            background-color: rgb(208, 249, 235);
+            text-align: center;
+        }
+
+        h2{
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: aliceblue;
+            color: darkred;
+            text-align: center;
+            width: 1500px;
+            height: 100px;
+            background-color: rgb(248, 172, 172);
+            padding-top: 50px;
+        }
+        
+        h3{
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: aliceblue;
+            color: darkblue;
+            text-align: center;
+        }
+
+        p{
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: aliceblue;
+            color: darkblue;
+            text-align: center;
+        }
+
+        .exemplo{
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: aliceblue;
+            color: darkgreen;
+            text-align: center;
+        }
+
+        .t2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: aliceblue;
+            color: darkred;
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#caixa{
+            background-color: darkgreen;
+            width: 200px;
+            height: 200px;
+            font-family: fantasy;
+            font-size: 40px;
+            color: aliceblue;
+            text-align: center;
+
+        }
+
+        img{
+            height: 500px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Curso - JavaScript</h1>
+    
+    <div>
+        <h2>Variaveis</h2>
+        <h3 >Regras de Variaveis</h3>
+        <p>       
+            <br> - Pode começar com uma letra, $ ou _
+            <br> - Não pode começar com numeros
+            <br> - E possivel usar letras e numeros
+            <br> - Não podem conter espaços
+            <br> - Não pode ser palavras reservadas
+        </p>
+        <br><br>
+        <h3> Tipos de Variaveis</h3>
+        <p>
+            <br> - Number / numeros
+            <br> - Boolean / Verdadeiro e Falso
+            <br> - String / Conjuntos de caracteres
+        </p>
+        <br><br>
+        <h3>Alguns Tipos primitivos JS</h3>
+        <p>
+            <br> - Number / Infinity(Infinito) - NaN(Não e um número)
+            <br> - Object / Objeto - O JS e uma programação orientada a Objetos
+            <br> - Array / Vetor de programação
+            <br> - function / E a função mais importante do JS
+            <br> - typeof - Ver os tipos primitivos 
+        </p>
+    </div>
+    <br><br><br><br>
+
+    <div>
+        <h2>Tratamento de dados</h2>
+        <h3>Manipulação de dados</h3>
+        <h3>Converter Strings para Numeros</h3>
+        <p>
+            <br> - Number.parseInt(n) / Converter para números inteiros
+            <br> - Number.parseFloat(n) / Converter para números reais
+            <br> - Number(N) / Converte automaticamente para números reais ou inteiros
+            <br><br><strong>Sintaxe</strong>
+            <br>
+            <br> var n1 = Number.parseInt(prompt('Digite um Numero'))
+            <br> var n1 = Number.parseFloat(prompt('Digite um Numero'))
+            <br> var n1 = Number(prompt('Digite um Numero'))
+        </p>
+        
+        <h3>Converter Number para Strings</h3>
+        <p>
+            <br> String(n) / Converte números para Strings 
+            <br> n.toStirng() / Tambem converte números para Strings
+            <br><br><strong>Sintaxe</strong>
+            <br> var n1 = String(n1)
+            <br> var n1 = toStirng(n1)
+        </p>
+        <h3>Formatando String</h3>
+        <p>
+            <br><strong>Exemplos Concatenação e Templates de Strings</strong>
+            <br>
+                <p class="exemplo">
+                <br>var s = 'JavaScript'
+                <br>document.write('Estou apredendo '+ s) / Concatenação
+                <br>document.write(`Estou aprendendo ${s}`) / Templates String
+                <br>
+                <br>- s.lenght / Diz Quantos caracters a string tem
+                <br>- s.toUppercase() / Converte tudo para letras Maiusculas
+                <br>- s.toLowercase () / Converte tudo para letras Minusculas
+            </p>
+        </p>
+    </div>
+    <br><br>
+    
+    <div>
+    <h2>Operadores JavaScript</h2>
+    <h3>
+        <strong class="t2">Tipos</strong>
+        <br>
+        <br>- Aritmeticos
+        <br>- Atribuição
+        <br>- Relacionais
+        <br>- Lógicos
+        <br>- Ternario 
+    </h3>
+
+    <p>
+        <br><strong>Aritmeticos</strong>
+        <br>
+        <br> ( + ) Adição -> 5 + 2 = 7 <br>
+        <br> ( - ) Subtração -> 5 - 2 = 3 <br>
+        <br> ( * ) Multiplicação -> 5 * 2 = 10 <br>
+        <br> ( / ) Divisão -> 5 / 2 = 2.5 <br>
+        <br> ( % ) Divisão Inteira - Resto da Divisão -> 5 % 2 = 1 <br>
+        <br> ( ** ) Potencia -> 5 ** 2 = 25 <br>
+        <br> ( ++ ) Incremento +1 -> 5++ = 6 <br>
+        <br> ( -- ) Decremento -1 -> 5-- = 4 <br>
+
+    </p>
+    <br><br>
+    <p>
+        <br><strong>Precedência Aritmeticas</strong>
+        <br>
+        <br> 1° - Parenteses ( ) <br>
+        <br> 2° - Potencia ** <br>
+        <br> 3° - Multiplicação * , Divisão / , Divisão Inteira % <br>
+        <br> 4° - Adição + , Subtração - <br>
+    </p>
+        <br>
+    <p>
+        <br><strong>Relacionais</strong> <br>
+        <br> ( < ) Menor _ 5 < 2 = Falso <br>
+        <br> ( > ) Maior _ 5 > 2 = Verdadeiro <br>
+        <br> ( <= ) Menor Igual _ 5 <= 2 = Falso <br>
+        <br> ( >= ) Menor Igual _ 5 >= 2 = Verdadeiro <br>
+        <br> ( == ) Igual __ 5 == 2 = Falso <br>
+        <br> ( != ) Diferente __ 5 != 2 = Verdadeiro <br>
+        <br> ( === ) Indentico __ 5 === '5' = Falso <br>
+        <br>
+        <br><strong>Exemplos Relacionais</strong> <br>
+        <br> preço >= 200 // O preço e maior ou igual a 200 ? <br>
+        <br> idade < 18 // A idade e menor que 18 ? <br>
+        <br> curso == 'JavaScript' // O curso e JavaScript ? <br>
+        <br> n1 != n2 // O n1 e diferente de n2 <br>
+    </p>
+        <br>
+    <p>
+        <br><strong>Lógicos</strong> <br>
+        <br> ( ! ) Negação (não) <br>
+        <br> ( && ) Conjunção (e) <br>
+        <br> ( || ) Disjunção (ou) <br>
+        <br>
+        <br><strong>Exemplos Logicos:</strong><br><br>
+        <br><strong>Negação ( ! )</strong><br>
+        <br> ! false = true <br>
+        <br> ! true = false <br>
+        <br>
+        <br><strong>Conjunção ( && )</strong> <br>
+        <br> true && true = true <br>
+        <br> true && false = false <br>
+        <br> false && true = false <br>
+        <br> false && false = false <br>
+        <br> * Na conjunção so e verdadeiro quando os 2 são verdadeiros. <br>
+        <br>
+        <br><strong>Disjunção( || )</strong> <br>
+        <br> true || true = true <br>
+        <br> true || false = true <br>
+        <br> false || true = true <br>
+        <br> false || false = false <br>
+        <br> * Na Disjunção so e falso quando os 2 forem Falsos. <br>
+        <br>
+        <br><strong>Precedência</strong><br>  
+        <br> 1° - Operadores aritmeticos +, -, *, / <br>
+        <br> 2° - Relacionais >, <, >=, <=, ==, != <br>
+        <br> 3° - Logicos ( ! Não ) <br>
+        <br> 4° - Conjunção ( && e ) <br>
+        <br> 5° - Disjunção ( || ou ) <br>
+
+
+    </p>  
+    </div>
+    <br><br>
+    <div>
+        <h2>Introdução ao DOM</h2>
+    </div>
+    <div>
+        <p>
+            <br><strong>Iniciando estudos com DOM</strong><br><br>
+            <br>O que e DOM ?<br>
+            <br>E um modelo de objetos para documentos, basicamente e um conjunto de objetos dentro do seu navegador que dar acesso aos componentes internos do <strong>Website</strong>, Não funciona dentro do NODE JS, mais funciona quando esta presente dentro do navegador<br>
+            <br>Árvore <strong>Dom</strong><br>
+            <strong><br>O que é a Árvore DOM ?<br></strong>
+            <br>A Árvore DOM e um modelo que se estrutura em formato de árvore, com vários galhos que indicam diferentes elementos da página.<br>
+            <br><img src="https://cahfelix.com/wp-content/uploads/2017/08/dom-no-2.jpg" alt=""><br>
+            <br><strong>5</strong> formas para selecionar elementos dentro da árvore DOM<br>
+            <strong><br>- Marca<br></strong>
+            <br>Sintaxe:<br>
+            <br>getElementsByTagName()<br>
+            <br>Exemplo:<br>
+            <br><br>
+                <p class="exemplo">
+                    <br>var p1 = document.getElementsByTagName('p')[0] <br>
+                    <br>window.document.write(p1.innerText) <br>
+                    <br>p1.style.color = blue<br>
+                </p>
+        <p>        
+            <br>Modificar coisas dentro dos elementos, como mudar fonte, cor, bordar e etc... Quando se tem mais de um elemento pra selecionar usar o [], <br>
+            <br><br>
+                
+
+            <strong><br>- ID<br></strong>
+            <br>Sintaxe:<br>
+            <br>var n1 = document.getElementByID()<br>
+            <br><br>
+
+            <strong><br>- Nome<br></strong>
+            <br>Sintaxe:<br>
+            <br>var n1 = document.getElementByName()<br>
+            <br><br>
+
+            <strong><br>- Classe<br></strong>
+            <br>Sintaxe:<br>
+            <br>var n1 = document.getElementByClassName()<br>
+            <br><br>
+
+            <strong><br>- Seletor<br></strong>
+            <br>Sintaxe:<br>
+            <strong><br>var n1 = querySelector(div#n1) A Hashtag seleciona o ID<br></strong>
+            <strong><br>var n1 = querySelectorAll(div.n1) O ponto seleciona a classe<br></strong>
+            <br><br>
+            <br><br>
+
+        </p>
+        </p>
+
+
+    </div>
+    <div>
+        <h2>Eventos DOM</h2>
+    </div>    
+    <div>
+        <p>
+            <strong><br><br>Evento e tudo aquilo que possa acontecer com qualquer elemento.<br></strong>
+            <br>Alguns Exemplos:<br>
+            <br>mouseenter, mousemove, mousedown, mouseup<br>
+            <br>Existem varios eventos, site para ver esses inumeros eventos e <strong>'Events Reference MDN'</strong><br>
+            <br>
+        </p>
+            <div id="caixa" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+                BRASIL
+            </div>
+
+        <p>   
+            <br><br><strong>Função</strong><br>
+            <br> E um conjunto de codigos, e um conjuntos de linhas que vão ser executadas quando o evento ocorrer.<br>
+            <br>- Para executar as linhas de codigo o 1° passo e colocar dentro de um bloco.
+            <br>- Bloco em JS e delimitado dentro dos sinais de {}.
+            <br>- Abre a chave, coloca o codigo e fecha chave.
+            <br>- Nomeia o bloco como function
+            <br>- Para o metodo funcionar tem que dar um nome pra função
+            <br>- Geralmente o nome da função são os nomes da ação que deve colocar
+            <br>- Sintaxe:
+            <br>function açao() {  }
+            <br><br><strong> Sintaxe de passar o mouse por cima: </strong>
+            <br><br>var a = document.getElementById('caixa')
+            <br>function entrar(){ <br>
+            <br>a.innerHTML = 'Entrou'
+            <br>a.style.background = 'yellow'
+            <br>a.style.color = 'green'
+            <br>}
+        </p>
+    </div>
+    <div>
+        <h2>Condições 01</h2>
+        <br>
+        <p>
+            <br>Em qualquer linguagem de programação, o código precisa tomar decisões e realizar ações de acordo, dependendo de diferentes entradas. Por exemplo, em um jogo, se o número de vidas do jogador é 0, então o jogo acaba. Em um aplicativo de clima, se estiver sendo observado pela manhã, ele mostra um gráfico do nascer do sol; Mostra estrelas e uma lua se for noite. Neste artigo, exploraremos como as chamadas declarações condicionais funcionam em JavaScript.<br>
+            <br>1 - A palavra reservada if(se) seguida de um par de parênteses. <br>
+            <br>2 - Um teste condicional, localizado dentro dos parênteses (normalmente "este valor é maior que esse", ou "este valor existe"). Esta condição pode fazer uso dos operadores de comparação que discutimos no último módulo, e podem retornar true ou false. <br>
+            <br>3 - Um par de chaves, e dentro dele temos código — pode ser qualquer código que queiramos, e só vai ser executado se o teste condicional retornar true.<br>
+            <br>4 - A palavra reservada else(se não).<br>
+            <br>5 - Outro par de chaves, dentro dele temos mais um pouco de código — pode ser qualquer código que queiramos, e só vai executar se o teste condicional retornar um valor diferente de true, neste caso not true, ou false.<br>
+            <br> <strong>Sintaxe</strong> <br>
+            <br> <img src="https://miro.medium.com/max/1400/1*9ziYFey_kTL5aAcf1N816Q.png" alt=""><br>
+        </p>
+        <br><br>
+        <h2>Condições 02</h2>
+        <br>
+        <p>
+            <br><strong> Condições aninhadas -</strong> Condicao é a estrutura de condição a ser verificada para decidir se as linhas do bloco de código serão executadas ou não. Caso a condição seja falsa, o bloco de código 1 não deve ser executado, mas o bloco de código 2 sim. Não existe limite para o número de condições declaradas com a estrutura else if (condicao n).<br>
+            <br><strong> Condições Mútiplas Comando Switch -</strong> A estrutura condicional switch permite executar um bloco de código diferente de acordo com cada opção (cada case) especificada. Seu uso é indicado quando os valores a serem analisados nessas condições são pré-definidos.<br>
+            <br><img src="https://arquivo.devmedia.com.br/naoexclusivo/EduardoSpinola/Documentacao/switch/img/switch.png" alt=""><br>
+            <br>Expressao é a expressão a ser comparada com cada case declarado dentro do switch. Caso o valor obtido na expressão seja a igual ao que for declarado no case, o bloco de código é executado. <br>
+            <br><strong>case</strong>  é o valor que será comparado à expressão.<br>
+            <br><strong>break</strong> é a palavra reservada que finaliza a execução do switch. Caso não especificada no final do bloco de código em execução, as linhas dos blocos de código seguintes também serão executadas. <br>
+            <br><strong>Default</strong> é a palavra reservada que define o bloco de código a ser executado se nenhum dos cases atenderem à expressão declarada no switch. <br>
+            <br><img src="https://miro.medium.com/max/1400/1*ObvbhzbIQEYqYudu_3q-iA.png" alt=""><br>
+
+        </p>
+        <br><br>
+        <h2>Repetições</h2>
+        <br>
+        <p>
+            <br><strong>Laços de Repetições - </strong>oferecem um jeito fácil e rápido de executar uma ação repetidas vezes. Executar o mesmo comando varias vezes para chegar em um determinado resultado.<br>
+            <br><strong>Estruturas While</strong>  - é usada quando tem uma quantidade inderteminada de repetições <br>
+            <br><strong>Sintaxe While</strong><br>
+            <br>var x = 1
+            <br>while(x <= 10){
+            <br>x++
+            <br>} <br>
+            <br>* No laço de repetição inclui uma condição que vai retornar <strong>Verdadeiro</strong> ou <strong>Falso</strong> que num dado momento quando retorna falso, a repetição e encerrada e a execução do script segue em diante.<br>
+            <br><br><strong>Estrutura 2 - Do While</strong> - e quase o mesmo funcionamento que o while, a diferença é que com o uso dele teremos os comandos executados ao menos uma única vez.<br>
+            <br><strong>Sintaxe Do While</strong><br>
+            <br>var x = 1<br>
+            <br>do{<br>
+            <br>document.write(x)<br>
+            <br>x++<br>
+            <br>}while(x <= 10)<br> 
+            <br><br><strong>Estrutura For</strong> - A instrução for cria um loop que consiste em três expressões opcionais, dentro de parênteses e separadas por ponto e vírgula, seguidas por uma declaração ou uma sequência de declarações executadas em sequência.<br>
+            <br><strong>Sintaxe For</strong><br>
+            <br>for(variavel; condição; incremento){<br>
+            <br>}<br>
+            <br><strong>Exemplo For</strong><br>
+            <br>for(var x = 1; x < 11; x++){<br>
+            <br>document.write(x)<br>
+            <br>}<br>
+        </p>
+
+
+    </div>
+
+    
+
+    <script src="01.js"></script>
+    
+</body>
+</html>

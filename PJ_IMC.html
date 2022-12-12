@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando IMC</title>
+    <style>
+        body{
+            background-color: rgb(35, 34, 34);
+        }
+
+        .titulo{
+            font-size: 50px;
+            color: gold;
+            background-color: black;
+            height: 120px;
+            width: 2000;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .titulo:hover{
+            background-color: rgb(200, 200, 200);
+            color: rgb(68, 68, 0);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .block{
+            font-size: 30px;
+            color: bisque;
+            height: 120px;
+            width: 2000;
+            align-items: center;
+            text-align: center;
+            font-family: fantasy;
+          }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="titulo"> Calculando IMC</h1>
+    
+    <div class="block">
+        <p>Digite sua altura:</p>
+        <input type="number" id="altura"> <!--  -->
+    </div>
+
+    <div class="block">
+        <p>Digite seu peso:</p>
+        <input type="number"  value="number" id="peso">
+    </div>
+
+    <div class="block">
+        <p>Seu IMC e:</p>
+        <input type="button" onclick="javascript:calimc();" name="name" value="Seu IMC e:"> <!--  -->
+        <input type="text" id="txtResultado" value=""> <!--  -->
+    </div>
+
+    
+
+    <script>
+
+    function calimc(){ //
+
+        var peso = Number(document.getElementById('peso').value); //
+        var altura = Number(document.getElementById('altura').value); //
+
+        
+        txtResultado.value = (peso / (altura * 2)) //
+    }
+
+    </script>
+</body>
+</html>

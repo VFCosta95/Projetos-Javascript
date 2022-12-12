@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dissecando Palavra</title>
+    <style>
+        body{
+            background-color: darkslategray;
+            color: chartreuse;
+            font-size: 20px;
+            font-family: cursive;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <h1>Dissecando Palavras</h1>
+    
+    <input type="button" value="Executar" onclick="javascript:dissecar();" id="a">
+ 
+
+    <script>
+        
+    var nome = prompt('Digite uma palavra: ')
+    
+    function dissecar(){
+    document.write(`A palavra é ${nome}<br><br>`)
+    document.write(`A palavra tem ${nome.length} letras <br><br>`)
+    document.write(`A palavra em letras maiusculas é ${nome.toLocaleUpperCase()} <br><br>`)
+    document.write(`A palavra em letras minusculas é ${nome.toLocaleLowerCase()} <br><br>`)
+    if(nome == Number)
+        document.write('E um number')
+    else
+        document.write('E uma string')
+
+    
+}
+    
+    </script>
+
+</body>
+</html>
